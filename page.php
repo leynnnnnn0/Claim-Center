@@ -76,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     if($policies) {
                         foreach($policies as $policy) {
                             echo "<tr>";
-                            echo "<td><button>Select</button></td>";
+                            echo "<td><button id='select-button' onClick='handleSelected()'>Select</button></td>";
                             echo "<td>". $policy['policy_number']. "</td>";
                             echo "<td>". $policy['first_name']. "</td>";
                             echo "<td>". $policy['address']. "</td>";
