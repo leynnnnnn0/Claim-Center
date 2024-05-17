@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body, html {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+}
+
+:root {
+    --black-font: #000000;
+    --white-font: #ffffff;
+    --first-gray: #C6C4C4;
+    --second-gray: #B1AFAF;
+
+    --large-font: 2rem;
+    --medium-font: 1.5rem;
+    --small-font: 1rem;
+    --xs-font: 0.8rem;
+}
+
+a {
+    color: var(--black-font);
+}
+
+.FLEX-ONLY {
+    display: flex;
+}
+
+.FLEX {
+    display: flex;
+    align-items: center;
+}
+
+.FLEX-COLUMN {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-bar {
+    height: 50px;
+    width: 100%;
+    background: var(--first-gray);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: var(--medium-font);
+}
+
+.nav-options-list {
+    font-size: var(--xs-font);
+}
+
+.nav-option {
+    margin-left: 7rem;
+
+    cursor: pointer;
+}
+
+.claim-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.claim-options {
+    position: absolute;
+    width: 300px;
+    padding: 0.5rem;
+    background: var(--first-gray);
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    margin: 1rem 0;
+    display: none;
+}
+
+
+.claim-options a{
+    display: block;
+    padding: 1rem 0;
+}
+
+.claim-options[show] {
+    display: block;
+}
+
+
+
+.claim-options a:hover {
+    background: hsl(0, 0%, 90%);
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.search-claim input {
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.claim-body {
+    height: 100vh;
+    width: 100%;
+}
+
+.side-bar {
+    height: 100%;
+    width: 300px;
+    background: var(--second-gray);
+    padding: 1rem 2rem;
+
+}
+
+.side-bar-title {
+    color: var(--white-font);
+}
+
+.steps {
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+
+.steps li {
+    margin: 0.5rem 0;
+}
+
+.about-insured-nav {
+    height: 50px;
+    width: 100%;
+    background: var(--second-gray);
+    padding: 0 1.5rem;
+    font-weight: bolder;
+}
+
+.about-insured-nav div {
+    margin-left: 1rem;
+}
+
+.right-content {
+    width: 100%;
+    height: 100vh;
+}
+
+.step-number {
+    padding: 1rem 2rem;
+}
+
+.search-policy{
+    padding: 1rem 2rem;
+}
+
+
+
+.search-policy div {
+    margin-bottom: 1rem;
+}
+
+.input-div {
+    width: 450px;
+    justify-content: space-between;
+}
+
+.input-div input {
+    width: 300px;
+    height: 2rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.search-policy-buttons {
+    margin-top: 2rem;
+}
+
+.search-policy-button {
+    background: rgb(76, 238, 76);
+    color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.header {
+    background: var(--first-gray);
+}
+
+.policy-result-table {
+    border-collapse: collapse;
+}
+
+.header th, td {
+    padding: 0 1rem;
+}
+
+td {
+    border: 1px solid var(--first-gray);
+}
+
+.policy-table {
+    padding: 0 2rem;
+}
+
+.select-button {
+    width: 100%;
+}
