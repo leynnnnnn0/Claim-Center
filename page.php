@@ -12,15 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
     <div class="claim-body FLEX-ONLY">
-        <div class="side-bar">
-            <span class="side-bar-title">New Claim Wizard</span>
-            <ul class="steps">
-                <li>Find Policy</li>
-                <li>Basic Info</li>
-                <li>Loss Details</li>
-                <li>Save & Assign Claim</li>
-            </ul>
-        </div>
+        <?php require "src/components/sidebar.php"?>
         <div class="right-content">
             <div class="about-insured-nav FLEX">
                 <div class="policy-number">
