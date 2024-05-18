@@ -41,7 +41,7 @@
         if ($policies) {
             foreach ($policies as $policy) {
                 echo "<tr>";
-                echo "<td><button id='select-button' onClick='handleSelected()'>Select</button></td>";
+                echo "<td><button id='".$policy['policy_number']."' onClick='handleSelected(". $policy['policy_number'] .")'>select</button></td>";
                 echo "<td>" . $policy['policy_number'] . "</td>";
                 echo "<td>" . $policy['first_name'] . "</td>";
                 echo "<td>" . $policy['address'] . "</td>";
